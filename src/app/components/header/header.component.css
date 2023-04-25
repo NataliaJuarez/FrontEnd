@@ -21,23 +21,23 @@ header .logo h5{
     padding-top: 12px;
     position: relative;
 }
-header .logo h5 span{
+/* header .logo h5 span{ NO FUNCIONA EL CODIGO EN HTML
     position: absolute;
     right: 0;
     width: 0;
-    background: #010314;     /*para que tape las letras*/
+    background: #010314;     /*para que tape las letras
     border-left: 1px solid #fff;
     
-    animation: maquina 3s infinite alternate steps(12); /*crea la animacion*/
-}
-@keyframes maquina {
-    from {
+    animation: maquina 3s infinite alternate steps(12); /*crea la animacion
+} */
+/*@keyframes maquina {  NO ESTA FUNCIONANDO EL CODIGO EN HTML
+     from {
         width: 100%;
     }
     to {
         width: 0;
     }
-}
+} */
 header button {                  
     font-family: 'Century gothic';
     cursor: pointer; 
