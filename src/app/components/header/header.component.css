@@ -1,0 +1,58 @@
+header {
+	background: #010314;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	/*padding: 0; si aumento el valor corre el botón de login más a la derecha y si lo saco no modifica nada*/
+}
+header .logo img{
+	margin: 5px 0;
+	width: 100px;
+    padding: 0 5px;
+}
+header .logo h5{   
+	color: #ffff;
+    font-family: 'arial';
+	font-size: 12px;
+	text-decoration: none;
+    float: right;
+    padding-top: 12px;
+    position: relative;
+}
+header .logo h5 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #010314;     /*para que tape las letras*/
+    border-left: 1px solid #fff;
+    
+    animation: maquina 3s infinite alternate steps(12); /*crea la animacion*/
+}
+@keyframes maquina {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+header button {                  
+    font-family: 'Century gothic';
+    cursor: pointer; 
+    background-color: transparent;
+    margin-top: 3px;
+    padding: 7px 11px;
+    border: none; /*1px transparent #fff;
+    border-radius: 5px;     */
+    font-size: 16px;
+    color: #fff;
+    transition: .5s;
+}
+header button:hover{      /*le da el efecto al boton*/
+        color: #00ff4c;
+     /*   border-color: #00ff4c; */
+        text-decoration: blink;
+        font-weight: bold; 
+}
