@@ -1,0 +1,42 @@
+.contacto{                  
+    padding: 50px;
+}
+.contacto .contenido-seccion{     /*cambia la ubicación de los elementos*/
+    max-width: 1100px;
+	margin: auto;
+}
+.contacto h2{               /*cambia el formato y ubicación de contacto*/
+    font-size: 48px;
+    font-family: 'Gruppo';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto input, .contacto textarea{   /*modifica el formato/diseño de los cuadros de relleno de contacto*/
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgb(60, 51, 103);
+    border-radius: 17px;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{                /*modifica el formato/diseño del botón enviar*/  
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    font-family: 'century gothic';
+}
+.contacto button:hover{
+    font-weight: bold;
+}
