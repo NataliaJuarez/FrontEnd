@@ -1,0 +1,29 @@
+.sobremi{
+    padding: 50px;
+}
+.sobremi .contenido-sobremi{
+    max-width: 1100px; /*linea para quitar ????*/
+    margin: auto;
+    background-color: rgba(24, 4, 39, 0.3);
+    border-radius: 20px;
+    padding: 15px;
+}
+.sobremi .contenido-sobremi h2{
+    font-size: 48px;
+    font-family: 'Gruppo';
+    text-align: center;
+    padding: 5px 0 30px;
+}
+.sobremi .contenido-sobremi p{
+    color: #d0d0d0;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 10px 20px;
+}
+.sobremi .contenido-sobremi p span{    /*BORRAR ???*/
+    color: #00ff4c;     /*para cambiar el color de "hola, soy Natalia Juárez"*/
+    font-family: 'Oooh baby';
+    font-size: 25px;
+    font-weight: bold;
+}
