@@ -1,0 +1,30 @@
+.experiencia{
+    padding: 50px;
+}
+.experiencia .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    background-color: rgba(31, 31, 33, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.experiencia  h2{
+    font-size: 48px;
+    font-family: 'Gruppo';
+    text-align: center;
+    padding: 15px 0 5px;
+}
+.experiencia ul li {
+    list-style: none;
+    padding: 20px;
+}
+.experiencia ul li h4 {
+    font-size: 20px;
+}
+.experiencia .contenido-seccion p{
+    display: flex;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
