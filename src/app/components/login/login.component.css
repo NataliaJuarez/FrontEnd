@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Oooh+Baby&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/banner.jpg) no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'century gothic';
+}
+
+.login-box{
+    width: 320px;
+    height: 420px;
+    background-color: #010314;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 70px 30px;
+}
+
+.login-box img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.login-box h1 {
+    font-family: 'Gruppo';
+    font-size: 42px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+.login-box input{
+    width: 87%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-box button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.login-box button:hover {
+    color: #00ff4c;
+    text-decoration: blink;
+    font-weight: bold;
+    border: 1px solid #00ff4c;
+}
