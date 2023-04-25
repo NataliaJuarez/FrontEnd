@@ -1,0 +1,35 @@
+footer{
+    background: rgba(24, 4, 39, 1);
+    padding: 20px 0 15px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .volver{
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    line-height: 50px;
+    font-size: 18px;
+}
+footer .volver:hover{
+    color: #00ff4c;
+    border-color: #00ff4c;
+    text-decoration: blink;
+    font-weight: bold;
+}
+
+
+.divider {
+    border-bottom: 2px dashed #0c3b3b;
+    margin: 2px 0;
+    width: 90vw;
+    margin: auto;
+  }
+  .large {
+    height: 10px;
+  }
