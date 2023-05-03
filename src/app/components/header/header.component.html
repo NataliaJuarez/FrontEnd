@@ -3,7 +3,8 @@
     <a href="https://argentinaprograma.inti.gob.ar/"><img src="../../../assets/logo arpro.png" alt="Logo Argentina Programa" ></a>
     <h5>#YoProgramo </h5>   <!--angular no toma <span> &#160 </span> para el efecto maquina de escribir-->
 </div>
-<a href="login.html"> 
-    <button>Login</button>
-</a>	
+    <app-boton-login (botonClick)="iniciarSesion()">
+        <i class='bx bx-log-in'></i>
+        Login
+    </app-boton-login>
 </header>

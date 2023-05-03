@@ -33,3 +33,32 @@
 .inicio .contenido-banner span{
     font-size: 15px;
 }
+
+.edit-img {
+    position: absolute;
+    left: 49%;
+    top: 25%;
+    font-size: 20px;
+    cursor: pointer;    
+}
+
+.edit-img:hover {
+    color: rgba(24, 4, 39, 1);
+    background-color: rgba(228, 228, 235, 0.7);
+    border: 5px solid rgba(288, 288, 235, 0.1); 
+    border-radius: 70%;
+    box-shadow: 1px 1px;
+}
+
+.edit-info{
+    font-size: 15px;
+    cursor: pointer;
+}
+.edit-info:hover{
+    color: rgba(24, 4, 39, 1);
+    font-size: 17px;
+    background-color: rgba(228, 228, 235, 0.7);
+    border: 5px solid rgba(288, 288, 235, 0.1); 
+    border-radius: 70%;
+    box-shadow: 1px 1px;
+}
