@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { persona } from 'src/app/modelo/persona';
 import { PersonaService } from 'src/app/services/persona.service';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faPen } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-about',
@@ -8,6 +10,8 @@ import { PersonaService } from 'src/app/services/persona.service';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
+  faTrash = faTrash; 
+  faPen = faPen;
   persona = new persona("","");
 
   constructor(private perService: PersonaService) {
@@ -22,4 +26,11 @@ export class AboutComponent {
     })
   }
 
+  onDelete(){
+    console.log("DELETE!");
+  }
+
+  onEdit(){
+    console.log("EDIT!");
+  }
 }

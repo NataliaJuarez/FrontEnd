@@ -18,4 +18,12 @@ export class EducationComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  onDelete(){
+    console.log("DELETE!");
+  }
+  
+  onEdit(){
+    console.log("EDIT!");
+  }
 }

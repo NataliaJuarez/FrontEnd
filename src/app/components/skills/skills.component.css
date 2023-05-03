@@ -150,3 +150,8 @@ svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 30) / 100);
     stroke: #ff00cc;
   }
+
+fa-icon{
+    cursor: pointer;
+    float:none;
+}

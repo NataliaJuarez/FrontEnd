@@ -7,5 +7,10 @@ import { Observable, of } from 'rxjs';
 })
 export class EdicionService {
   private apiUrl = 'http://localhost:4200/edit'
-  constructor() { }
+
+  constructor(
+    private http:HttpClient
+  ) { }
+
+  
 }

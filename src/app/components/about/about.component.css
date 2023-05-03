@@ -27,3 +27,16 @@
     font-size: 25px;
     font-weight: bold;
 }
+
+fa-Icon {
+    float: right;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+fa-Icon:hover{
+    color: #00ff4c;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 15px;
+}
