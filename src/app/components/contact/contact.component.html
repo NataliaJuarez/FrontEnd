@@ -1,12 +1,32 @@
 <section id="contacto" class="contacto">
     <div class="contenido-seccion">
         <h2>Contacto</h2>
-        <input type="text" placeholder="Nombre" required>
-        <input type="text" placeholder="Apellido" required>
-        <input type="email" placeholder="Email" required> 
-        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-        <button>
-            Enviar <i class="fa-solid fa-paper-plane"></i>
-        </button>
+        <div class="cards">
+            <div class="ubicacion">
+                <span>
+                    <i class="fa-solid fa-location-dot fa-bounce"></i><br><br>
+                    CABA, Buenos Aires, Argentina
+                </span>
+            </div>
+            <div class="mail">
+                <span>
+                    <i class="fa-regular fa-envelope fa-bounce"></i><br><br>
+                    juareznatalia94@gmail.com
+                </span>
+            </div>
+            <div class="social">
+                <span>
+                    <i class="fa-solid fa-hashtag fa-bounce"></i><br><br>
+                    <a href="https://github.com/NataliaJuarez"><i class="fa-brands fa-github"></i></a>
+                </span>
+            </div>
+        </div>
+        <div class="formulario">    	
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellido" required>
+            <input type="email" placeholder="Email" required> 
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea> <!--cuando quito el padding que hace que no estén centrados los input y el textarea, el placeholder queda muy pegado al borde. Por mas que de espacio para que se vean bien, al escribir se ve pegado al borde. quizas funcione colocando dentro de un div toda esa parte-->
+        </div>    
+        <button>¡Enviar!</button>
     </div>
-</section>
+</section> 
