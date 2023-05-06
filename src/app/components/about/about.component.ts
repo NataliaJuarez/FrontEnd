@@ -12,7 +12,7 @@ import { faPen } from '@fortawesome/free-solid-svg-icons';
 export class AboutComponent {
   faTrash = faTrash; 
   faPen = faPen;
-  persona = new persona("","");
+  persona = new persona("","","","","","","");
 
   constructor(private perService: PersonaService) {
 

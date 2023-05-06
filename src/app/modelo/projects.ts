@@ -1,11 +1,14 @@
 export class proyectos {
 
     id?: number;
-    nombre: String;   
+    nombre: String;
+    imagenproyecto: String;
+    descripcion: String;
+
     
-    constructor(nombre: String) {
-        this.nombre=nombre; 
+    constructor(nombre: String, imagenproyecto: String, descripcion: String) {
+        this.nombre=nombre;
+        this.imagenproyecto=imagenproyecto;
+        this.descripcion=descripcion; 
     }
 }
-
-//debería agregar una linea para imagenes ???
