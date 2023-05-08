@@ -12,7 +12,6 @@ export class PersonaService {
   constructor(private http:HttpClient) { }
 
   public verMiPerfil(): Observable<persona> {
-   // return this.http.get<persona>('localhost:8080/ver/miperfil');
     return this.http.get<persona>('http://localhost:8080/ver/miperfil');
   }
 }
