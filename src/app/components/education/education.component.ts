@@ -12,14 +12,15 @@ import { EducacionService } from 'src/app/services/educacion.service';
 export class EducationComponent implements OnInit {
   faTrash = faTrash; 
   faPen = faPen;
-  educacion = new educacion("","", new Date);
+  //educacion = new educacion("","", new Date);
+  educacionList : any;
 
   constructor (private eduService: EducacionService  ) {}
 
   ngOnInit(): void {
     this.eduService.verEducacion().subscribe(data => {
-     this.educacion=data; 
-     console.log(data);
+     this.educacionList=data; 
+     console.log(this.educacionList[0]);
     })
   }
 

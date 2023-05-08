@@ -2,28 +2,16 @@
     <div class="contenido-seccion"> 
         <h2>Educación</h2>
         <ul>
-            <li class="item">
-                <h4>{{educacion.titulo}}
-                    <fa-icon [icon]="faPen" (click)="onEdit()"></fa-icon>
+            <li *ngFor="let educacion of educacionList" class="item">
+                <h4>{{educacion.titulo}}                
                 </h4>
-                <fa-icon class="delete" [icon]="faTrash" (click)="onDelete()"></fa-icon>
+               <!-- <fa-icon class="delete" [icon]="faTrash" (click)="onDelete()"></fa-icon>-->
                 <span class="lugar">{{educacion.establecimiento}}</span>
                 <span class="fecha">{{educacion.anio}}</span>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>    
             </li>
-            <li class="item">
-                <h4>{{educacion.titulo}}
-                    <fa-icon [icon]="faPen" (click)="onEdit()"></fa-icon>
-                </h4>
-                <fa-icon class="delete" [icon]="faTrash" (click)="onDelete()"></fa-icon>
-                <span class="lugar">{{educacion.establecimiento}}</span>
-                <span class="fecha">{{educacion.anio}}</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-            </li>
         </ul>
     </div>
     
-    <app-add-education>
-        (onAddEducacion) = "addEducacion($event)"
-    </app-add-education>
+    
 </section>
