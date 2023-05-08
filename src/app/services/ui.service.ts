@@ -11,7 +11,7 @@ export class UiService {
   
   constructor() { }
 
-  toggleAddTask():void{
+  toggleAddEducacion():void{
     this.showAddEducacion = !this.showAddEducacion;
     this.subject.next(this.showAddEducacion);
   }

@@ -12,13 +12,13 @@ import { EducacionService } from 'src/app/services/educacion.service';
 export class EducationComponent implements OnInit {
   faTrash = faTrash; 
   faPen = faPen;
-  //educacion = new educacion("","",); no se que argumento poner para date
+  educacion = new educacion("","", new Date);
 
   constructor (private eduService: EducacionService  ) {}
 
   ngOnInit(): void {
     this.eduService.verEducacion().subscribe(data => {
-     // this.educacion=data; quitar las barras de comentario cuando sepa que tipo de argumento es date
+     this.educacion=data; 
      console.log(data);
     })
   }
