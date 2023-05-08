@@ -1,5 +1,5 @@
 .proyectos{
-    padding: 50px 20px;
+    padding: 50px;
     margin:auto;    
 }
 .proyectos h2{
@@ -7,4 +7,37 @@
     font-family: 'Gruppo';
     text-align: center;
     padding: 20px 0;
+}
+.proyectos p {
+    padding: 10px 0 10px 30px;
+}
+
+.proyectos .contenido-habilidades {
+    display: flex;
+}
+
+.proyectos .item {
+    background-color: rgba(60, 51, 103, .1);
+    margin: 20px;
+    height: 400px;
+    width: 450px;
+    border-radius: 20px;
+}
+
+.proyectos .item h4 {
+    text-align: center;
+    padding-top: 15px ;
+}
+
+.proyectos .item .card {
+    width: 440px;
+    height: 150px;
+    margin: auto;
+    padding: 15px 0 25px;
+}
+
+.proyectos .item .card img{
+    width: 440px;
+    height: 250px;
+
 }

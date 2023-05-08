@@ -1,60 +1,49 @@
-educacion{
-    padding: 50px 30px;
+.educacion{
+    padding: 50px;
 }
 .educacion .contenido-seccion{
     max-width: 1100px;
     margin: auto;
     text-align: center;
+    padding-bottom: 15px;
 }
-.educacion h2{
+.educacion  h2{
     font-size: 48px;
     font-family: 'Gruppo';
-    padding: 20px 0;
-
-}
-.educacion .fila{
-    display: flex;
-    justify-content: space-between;
-}
-.educacion .fila .col{
-    width: 49%;
-    padding: 0 20px;
-}
-.educacion .fila .col h4{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.educacion .fila .izquierda{
-   border-right: 2px solid rgba(31, 31, 33, 0.3); /*linea central*/
-}
-.educacion .fila .derecha{
-    border-left: 2px solid rgba(31, 31, 33, 0.3); /*linea central*/
-}
-.educacion .fila .item{
-    padding: 25px;
-    margin-bottom: 30px;
-    background-color: rgba(31, 31, 33, 0.3);
-    border-radius: 55px;
-    position: relative;
-}
-.educacion .fila .item h4{
-    font-size: 20px;
-    margin-bottom: 5px;
-    
-}
-.educacion.fila .item .lugar{ 
-    font-size: 20px;
-    font-weight: bold;
-    display: block;
-}
-.educacion .fila .item .fecha{
-    display: block;
-    margin: 3px 0 10px;
-}
-.educacion .fila .item p{
-    line-height: 20px;
+    text-align: center;
+    padding-bottom: 5px;
 }
 .educacion ul li {
     list-style: none;
+    padding: 15px;
+    margin: 30px;
+}
+.educacion .item {
+    background-color: rgba(60, 51, 103, .05);
+    border-radius: 20px;
+}
+.educacion ul li h4 {
+    font-size: 20px;
+    padding: 7px 0;
+}
+.educacion .contenido-seccion p{
+    display: flex;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.educacion .lugar, .experiencia .fecha{
+    margin: auto;
+}
+fa-Icon {
+    float: right;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+fa-Icon:hover{
+    color: #00ff4c;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 15px;
 }

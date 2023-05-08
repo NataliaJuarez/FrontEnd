@@ -4,39 +4,85 @@
 .contacto .contenido-seccion{     /*cambia la ubicación de los elementos*/
     max-width: 1100px;
 	margin: auto;
+    text-align: center;
 }
-.contacto h2{               /*cambia el formato y ubicación de contacto*/
+.contacto .contenido-seccion .cards{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto .contenido-seccion h2{               
     font-size: 48px;
     font-family: 'Gruppo';
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
 }
-.contacto input, .contacto textarea{   /*modifica el formato/diseño de los cuadros de relleno de contacto*/
+.cards {
+    padding: 20px 0 50px;
+}
+.cards .ubicacion, .social, .mail{ 
+    margin: auto;
+    display: flex;
+  /*  box-sizing: border-box; */ 
+}
+.cards span {
+    width: 250px; 
+    height: 75px; 
+    background-color: rgba(60, 51, 103, 0.2);
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+    margin: auto;
+    line-height: 20px;
+    align-items: center;
+    /*box-shadow: rgba(59, 79, 207, 0.5) 0px 1px 2px 0px; efecto para que tengan sombra las tarjetas*/ 
+}
+.cards .fa-solid, .fa-regular{
+    font-size: 25px;
+    color: rgba(59,79,207, 1);
+}
+.cards .fa-brands {
+    font-size: 22px;
+    color: white;
+}
+.cards .fa-brands a:visited {
+  color: none;
+}
+
+.contacto input, .contacto textarea{   /* modifica el formatodiseño de los cuadros de relleno de contacto */
     display: block;
     width: 100%;
     padding: 18px;
     border: none;
     margin-bottom: 20px;
+    margin-right: 350px;
     background-color: rgb(60, 51, 103);
     border-radius: 17px;
     color: #fff;
     font-size: 18px;
 }
-.contacto button{                /*modifica el formato/diseño del botón enviar*/  
+.contacto .formulario {
+    padding-right: 30px;
+}
+
+.contacto button{               /* modifica el formato/diseño del botón enviar +*/
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 10px;
     width: fit-content;
     display: block;
     margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
+    padding: 12px 20px;
+    font-size: 18px;
     color: #fff;
     position: relative;
     z-index: 10;
     font-family: 'century gothic';
 }
 .contacto button:hover{
+    font-size: 20px;
+    border: 3px solid rgba(59,79,207, 1);
+    color: rgba(59,79,207, 1);
     font-weight: bold;
+
 }

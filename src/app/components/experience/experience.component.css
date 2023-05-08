@@ -4,8 +4,6 @@
 .experiencia .contenido-seccion{
     max-width: 1100px;
     margin: auto;
-    background-color: rgba(31, 31, 33, 0.5);
-    border-radius: 20px;
     text-align: center;
     padding-bottom: 15px;
 }
@@ -13,18 +11,39 @@
     font-size: 48px;
     font-family: 'Gruppo';
     text-align: center;
-    padding: 15px 0 5px;
+    padding-bottom: 5px;
 }
 .experiencia ul li {
     list-style: none;
-    padding: 20px;
+    padding: 15px;
+    margin: 30px;
+}
+.experiencia .item {
+    background-color: rgba(31, 31, 33, 0.5);
+    border-radius: 20px;
 }
 .experiencia ul li h4 {
     font-size: 20px;
+    padding: 7px 0;
 }
 .experiencia .contenido-seccion p{
     display: flex;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
+}
+.experiencia .lugar, .experiencia .fecha{
+    margin: auto;
+}
+fa-Icon {
+    float: right;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+fa-Icon:hover{
+    color: #00ff4c;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 15px;
 }

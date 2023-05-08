@@ -1,11 +1,8 @@
 <section id="sobremi" class="sobremi">
     <div class="contenido-sobremi">
         <h2>Sobre Mí</h2>
-        <p><span>Hola, soy Natalia Juárez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <fa-icon [icon]="faPen" (click)="onEdit()"></fa-icon> 
+        <fa-icon [icon]="faTrash" (click)="onDelete()"></fa-icon> 
+        <p><span>{{persona.about}}.</span></p>   
     </div>
 </section>

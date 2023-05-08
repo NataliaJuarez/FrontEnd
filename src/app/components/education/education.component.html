@@ -1,46 +1,17 @@
 <section id="educacion" class="educacion">
-    <div class="contenido-seccion">
+    <div class="contenido-seccion"> 
         <h2>Educación</h2>
-          <div class="fila">
-            <div class="col izquierda">
-            <!--<h2 id="educacion">Educación</h2> -->
-                <ul>
-                <li class="item izq">
-                    <h4>#Yo Programo</h4>
-                    <span class="lugar">Argentina Programa</span>
-                    <span class="fecha">Año</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                </li>
-                <li class="item izq">
-                    <h4>Arte y Multimedia</h4>
-                    <span class="lugar">Universidad de Oxford</span>
-                    <span class="fecha">Año</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                </li>
-                <li class="item izq">
-                    <h4>Bachiller con orientación Físico-Matemática</h4>
-                    <span class="lugar">Universidad de Oxford</span>
-                    <span class="fecha">2005 - 2008</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                </li>
-            </ul>
-            </div>
-            <div class="col derecha">
-            <!--    <h2 id="experiencia">Experiencia</h2>-->
-                <div class="item der">
-                    <h4>Trabajo</h4>
-                    <span class="casa">Nombre de Compañía</span>
-                    <span class="fecha">2005 - 2008</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>   
-                </div>
-                <div class="item der">
-                    <h4>Trabajo</h4>
-                    <span class="casa">Nombre de Compañía</span>
-                    <span class="fecha">2005 - 2008</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                   
-                </div>
-            </div>
-        </div>
+        <ul>
+            <li *ngFor="let educacion of educacionList" class="item">
+                <h4>{{educacion.titulo}}                
+                </h4>
+               <!-- <fa-icon class="delete" [icon]="faTrash" (click)="onDelete()"></fa-icon>-->
+                <span class="lugar">{{educacion.establecimiento}}</span>
+                <span class="fecha">{{educacion.anio}}</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>    
+            </li>
+        </ul>
     </div>
+    
+    
 </section>

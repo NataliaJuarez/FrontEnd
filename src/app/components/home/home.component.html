@@ -1,10 +1,13 @@
 <section id="inicio" class="inicio">
     <div class="contenido-banner">
         <div class="contenedor-img">
-            <img src="../../../assets/id.png" alt="imagen de perfil">
+            <img [src]="persona.imagendeperfil" alt="imagen de perfil">
+            <fa-icon [icon]="faPen" class="edit-img" (click)="onEdit()"></fa-icon>
         </div>
-        <h1>Natalia Juárez</h1>
-        <h2>Full Stack Developer Jr</h2>
-        <span>Buenos Aires (Argentina)</span>
+        <h1>{{persona.nombre}} {{persona.apellido}}
+            <fa-icon [icon]="faPen" class="edit-info" (click)="onEdit()"></fa-icon>
+        </h1>
+        <h2>{{persona.profesion}}</h2>
+        <span>{{persona.ciudad}}, {{persona.pais}}</span>
     </div>	
 </section>  
