@@ -19,10 +19,12 @@ export class EducationComponent implements OnInit {
 
   ngOnInit(): void {
     this.eduService.verEducacion().subscribe(data => {
-     this.educacionList=data; 
+     this.educacionList=data;
+     this.educacionList=this.educacionList.reverse(); //para que muestre el último dato ingresado primero
      console.log(this.educacionList[0]);
     })
   }
+
 
   onDelete(){
     console.log("DELETE!");

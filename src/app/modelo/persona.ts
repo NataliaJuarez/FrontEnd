@@ -4,19 +4,28 @@ export class persona {
     nombre: String;
     apellido: String;
     profesion: String;
-    ciudad: String;
-    pais: String;
+    fotoperfil: String;
+    imagenbanner: String;
     about: String;
-    imagendeperfil: String;
+    ciudad: String;
+    provincia: String;
+    pais: String;
+    mail: String;
+    redsocial: String;
     
-    constructor(nombre: String, apellido: String, profesion: String, ciudad: String, pais: String, about: String, fotodeperfil: String) {
+    constructor(nombre: String, apellido: String, profesion: String, fotoperfil: String, imagenbanner: String, about: String, ciudad: String, provincia: String, pais: String, mail: String, redsocial: String) {
         this.nombre=nombre;
         this.apellido=apellido;
         this.profesion=profesion;
-        this.ciudad=ciudad;
-        this.pais=pais;
+        this.fotoperfil=fotoperfil;
+        this.imagenbanner=imagenbanner;
         this.about=about;
-        this.imagendeperfil=fotodeperfil;
+        this.ciudad=ciudad;
+        this.provincia=provincia;
+        this.pais=pais;
+        this.mail=mail;
+        this.redsocial=redsocial;
+        
     }
     }
     

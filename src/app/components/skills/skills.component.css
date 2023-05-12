@@ -1,157 +1,36 @@
 .habilidades{
-    padding: 50px 20px;
+    padding: 50px;
     margin: auto;   
-    overflow: hidden;
 }
-.habilidades .contenido-habilidades{
+.habilidades .contenido-seccion{
     max-width: 1100px;
 }
-.habilidades h2{
+.contenido-habilidades h2{
     font-size: 48px;
     font-family: 'Gruppo';
     text-align: center;
-    padding: 20px 0;
 }
-.habilidades .container {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+.habilidades h4 {
+    margin-bottom: 20px;
 }
-.habilidades .container {
-    position: relative;
-    width: 900px;
-    display: flex;
-    justify-content: space-around;
+.habilidades .fila {
+    width: 400px;
+    height: 400px;
+    padding: 050px;
+    display: inline-table;
+    margin: 45px;
 }
-.habilidades .container .card {
-    position: relative;
-    width: 250px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    border-radius: 4px;
-    text-align: center;
-    overflow: hidden;
-    transition: 0.5s;
+.habilidades .progress {
+    background-color: transparent;
+    border: 1px solid rgb(59,79,207);
+    width: 300px;
 }
-  
-.habilidades .container .card:hover{
-    transform: translateY(-10px);
-}
-  
-.habilidades .container .card:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1;
-}
-  
-.habilidades .percent{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: inset 0 0 50px #000;
-    z-index: 1000;
-}
-  
-.habilidades .percent .number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-  
-.habilidades .percent .number h2 {
-    color: #777;
-    font-weight: 700;
-    font-size: 40px;
-    transition: 0.5s;
-}
-  
-.habilidades .card:hover .percent .number h2 {
-    color: #fff;
-    font-size: 60px;
-}
-  
-.habilidades .percent .number h2 span {
-    font-size: 24px;
-    color: #777;
-}
-  
-.habilidades .card:hover .percent .number h2 span {
-    color: #fff;
-    transition: 0.5s;
-}
-  
-.habilidades .text {
-    position: relative;
-    color: #777;
-    margin-top: 20px;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: 0.5s;
-}
-  
-.habilidades .card:hover .text{
-    color: #fff;
-}
-  
-svg {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    z-index: 1000;
-}
-  
-circle {
-    width: 100%;
-    height: 100%;
-    fill: none;
-    stroke: #14143a;
-    stroke-width: 10;
-    stroke-linecap: round;
-    transform: translate(5px,5px); 
-}
-  
-svg circle:nth-child(2){
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
-}
-  
-.card:nth-child(1) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 30) / 100);
-    stroke: #ff00cc;
-}
-.card:nth-child(2) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 35) / 100);
-    stroke: #ff00cc;
-  }
-.card:nth-child(3) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 30) / 100);
-    stroke: #ff00cc;
-  }
-.card:nth-child(4) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * 30) / 100);
-    stroke: #ff00cc;
-  }
 
-fa-icon{
-    cursor: pointer;
-    float:none;
+.progress .progress-bar {
+    background-color: rgb(59,79,207)        ;
+    padding: 30px;
+}
+
+.habilidades ul li {
+    list-style: none;
 }

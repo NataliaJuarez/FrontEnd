@@ -2,23 +2,14 @@
     <div class="contenido-seccion"> 
         <h2>Experiencia Laboral</h2>
         <ul>
-            <li class="item">
-                <h4>Trabajo 1
+            <li *ngFor="let experiencia of experienciaList" class="item">
+                <h4>{{experiencia.puesto}}
                     <fa-icon [icon]="faPen" (click)="onEdit()"></fa-icon>
                 </h4>
-                <fa-icon class="delete" [icon]="faTrash" (click)="onDelete()"></fa-icon>
-                <span class="lugar">Nombre de Compañía</span>
-                <span class="fecha">2005 - 2008</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>    
-            </li>
-            <li class="item">
-                <h4>Trabajo 2
-                    <fa-icon [icon]="faPen" (click)="onEdit()"></fa-icon>
-                </h4>
-                <fa-icon class="delete" [icon]="faTrash" (click)="onDelete()"></fa-icon>
-                <span class="lugar">Nombre de Compañía</span>
-                <span class="fecha">2005 - 2008</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+               <!-- <fa-icon class="delete" [icon]="faTrash" (click)="onDelete()"></fa-icon> -->
+                <span class="lugar">{{experiencia.empresa}}</span>
+                <span class="fecha">{{experiencia.anio1}} {{experiencia.anio2}}</span>
+                <p>{{experiencia.descripcion}}</p>    
             </li>
         </ul>
     </div>
