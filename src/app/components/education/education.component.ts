@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';  
 import { faPen } from '@fortawesome/free-solid-svg-icons';
-import { educacion } from 'src/app/modelo/education';
 import { EducacionService } from 'src/app/services/educacion.service';
 
 @Component({
@@ -19,12 +18,14 @@ export class EducationComponent implements OnInit {
 
   ngOnInit(): void {
     this.eduService.verEducacion().subscribe(data => {
-     this.educacionList=data; 
+     this.educacionList=data;
+     this.educacionList=this.educacionList.reverse(); //para que muestre el último dato ingresado primero
      console.log(this.educacionList[0]);
     })
   }
 
-  onDelete(){
+
+  onDelete(educacion: EducacionService ){
     console.log("DELETE!");
   }
   

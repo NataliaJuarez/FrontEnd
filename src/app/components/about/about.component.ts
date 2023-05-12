@@ -12,14 +12,13 @@ import { faPen } from '@fortawesome/free-solid-svg-icons';
 export class AboutComponent {
   faTrash = faTrash; 
   faPen = faPen;
-  persona = new persona("","","","","","","");
+  persona = new persona("","","","","","","","","","","");
 
   constructor(private perService: PersonaService) {
 
   }
 
   ngOnInit():void{
-    //this.persona={nombre: "Paola", apellido: "Perez"};
     this.perService.verMiPerfil().subscribe(data => {
       this.persona=data;
       console.log(data);

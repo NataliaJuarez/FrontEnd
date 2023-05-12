@@ -1,17 +1,25 @@
 <section id="educacion" class="educacion">
+    <app-add-education></app-add-education>
     <div class="contenido-seccion"> 
         <h2>Educación</h2>
-        <ul>
-            <li *ngFor="let educacion of educacionList" class="item">
-                <h4>{{educacion.titulo}}                
-                </h4>
-               <!-- <fa-icon class="delete" [icon]="faTrash" (click)="onDelete()"></fa-icon>-->
-                <span class="lugar">{{educacion.establecimiento}}</span>
-                <span class="fecha">{{educacion.anio}}</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>    
-            </li>
-        </ul>
-    </div>
+            <div class="col">
+                <ul>
+                    <li *ngFor="let educacion of educacionList" class="item">
+                        <img [src]="educacion.logo" alt="logo">
+                        <h4>{{educacion.titulo}}                
+                        </h4>
+                        <p class="lugar"><b>{{educacion.establecimiento}}</b></p>
+                        <p class="fecha">{{educacion.anio}}</p>    
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+              <!--  <fa-icon class="delete" [icon]="faTrash" (click)="onDelete()"></fa-icon> -->
+            </div>
+        </div>
+        <div class="fila">
+
+        </div>
     
     
 </section>

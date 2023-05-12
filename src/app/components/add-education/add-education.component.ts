@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { educacion } from 'src/app/modelo/education';
-import { UiService } from 'src/app/services/ui.service';
+import { UiEducacionService } from 'src/app/services/uieducacion.service';
 
 
 @Component({
@@ -16,13 +16,14 @@ export class AddEducationComponent implements OnInit {
   establecimiento:string = "";
   titulo:string = "";
   anio:Date = new Date;
+  logo:string = "";
   showAddEducacion: boolean=false;
   subscription?: Subscription
 
   constructor(
-    private uiService: UiService
+    private UiEducacionService: UiEducacionService
   ) { 
-    this.subscription = this.uiService.onToggle()
+    this.subscription = this.UiEducacionService.onToggle()
                               .subscribe(value => this.showAddEducacion = value)
   }
   
@@ -39,8 +40,8 @@ export class AddEducationComponent implements OnInit {
       return 
     }
 
-    const {establecimiento,titulo,anio} = this
-    const newEducacion = {establecimiento,titulo,anio}
+    const {establecimiento,titulo,anio,logo} = this
+    const newEducacion = {establecimiento,titulo,anio,logo}
 
     this.onAddEducacion.emit(newEducacion);
 

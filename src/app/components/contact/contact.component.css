@@ -6,7 +6,7 @@
 	margin: auto;
     text-align: center;
 }
-.contacto .contenido-seccion .cards{
+.contacto .contenido-seccion .bloque{
     display: flex;
     justify-content: space-between;
 }
@@ -16,17 +16,17 @@
     text-align: center;
     padding: 20px;
 }
-.cards {
+.bloque {
     padding: 20px 0 50px;
 }
-.cards .ubicacion, .social, .mail{ 
+.bloque .ubicacion, .social, .mail{ 
     margin: auto;
     display: flex;
   /*  box-sizing: border-box; */ 
 }
-.cards span {
-    width: 250px; 
-    height: 75px; 
+.bloque span {
+    width: 300px; 
+    height: 115px; 
     background-color: rgba(60, 51, 103, 0.2);
     border-radius: 25px;
     padding: 20px;
@@ -36,15 +36,15 @@
     align-items: center;
     /*box-shadow: rgba(59, 79, 207, 0.5) 0px 1px 2px 0px; efecto para que tengan sombra las tarjetas*/ 
 }
-.cards .fa-solid, .fa-regular{
+.bloque .fa-solid, .fa-regular{
     font-size: 25px;
     color: rgba(59,79,207, 1);
 }
-.cards .fa-brands {
+.bloque .fa-brands {
     font-size: 22px;
     color: white;
 }
-.cards .fa-brands a:visited {
+.bloque .fa-brands a:visited {
   color: none;
 }
 
@@ -59,9 +59,6 @@
     border-radius: 17px;
     color: #fff;
     font-size: 18px;
-}
-.contacto .formulario {
-    padding-right: 30px;
 }
 
 .contacto button{               /* modifica el formato/diseño del botón enviar +*/

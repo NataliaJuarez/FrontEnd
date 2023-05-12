@@ -9,7 +9,7 @@ import { PersonaService } from 'src/app/services/persona.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  persona = new persona("","","","","","","");
+  persona = new persona("","","","","","","","","","","");
   faPen = faPen;
 
   constructor(private perService: PersonaService) {
@@ -17,7 +17,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit():void{
-    //this.persona={nombre: "Paola", apellido: "Perez"};
     this.perService.verMiPerfil().subscribe(data => {
       this.persona=data;
       console.log(data);

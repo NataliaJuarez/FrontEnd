@@ -17,6 +17,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BotonLoginComponent } from './components/boton-login/boton-login.component';
 import { AddEducationComponent } from './components/add-education/add-education.component';
+import { AddExperienceComponent } from './components/add-experience/add-experience.component';
+import { AddSkillComponent } from './components/add-skill/add-skill.component';
+import { AddProjectComponent } from './components/add-project/add-project.component';
+import { EditPersonaComponent } from './components/edit-persona/edit-persona.component';
 
 
 @NgModule({
@@ -32,7 +36,11 @@ import { AddEducationComponent } from './components/add-education/add-education.
     ContactComponent,
     FooterComponent,
     BotonLoginComponent,
-    AddEducationComponent
+    AddEducationComponent,
+    AddExperienceComponent,
+    AddSkillComponent,
+    AddProjectComponent,
+    EditPersonaComponent
   ],
   imports: [
     BrowserModule,
