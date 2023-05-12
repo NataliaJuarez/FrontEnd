@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';  
 import { faPen } from '@fortawesome/free-solid-svg-icons';
-import { educacion } from 'src/app/modelo/education';
 import { EducacionService } from 'src/app/services/educacion.service';
 
 @Component({
@@ -26,7 +25,7 @@ export class EducationComponent implements OnInit {
   }
 
 
-  onDelete(){
+  onDelete(educacion: EducacionService ){
     console.log("DELETE!");
   }
   
