@@ -1,10 +1,11 @@
 <header>
-<div class="logo">
-    <a href="https://argentinaprograma.inti.gob.ar/"><img src="../../../assets/argpro.png" alt="Logo Argentina Programa" ></a>
-    <h5>#YoProgramo </h5>   <!--angular no toma <span> &#160 </span> para el efecto maquina de escribir-->
-</div>
-    <app-boton-login (botonClick)="iniciarSesion()">
-        <i class='bx bx-log-in'></i>
-        Login
-    </app-boton-login>
+    <div class="logo">
+        <a href="https://argentinaprograma.inti.gob.ar/"><img src="../../../assets/argpro.png" alt="Logo Argentina Programa" ></a>
+    </div>
+    <button type="button" (click)="login()" *ngIf="!isLogged">
+        <fa-icon [icon]="faPersonWalkingArrowRight"></fa-icon>  
+    </button>
+    <button type="button" (click)="onLogOut()" *ngIf="isLogged">
+        <fa-icon [icon]="faRightFromBracket"></fa-icon>   
+    </button>
 </header>
