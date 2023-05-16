@@ -8,24 +8,24 @@ import { educacion } from '../modelo/education';
   providedIn: 'root'
 })
 export class EducacionService {
-  url='http://localhost:8080';
+  url='https://porfolio-natalia.onrender.com';
 
   constructor(private http:HttpClient) { }
 
   public verEducacion(): Observable<educacion> {
-    return this.http.get<educacion>('http://localhost:8080/ver/educacion');
+    return this.http.get<educacion>('https://porfolio-natalia.onrender.com/ver/educacion');
   }
 
   onDelete(educacion:EducacionService): Observable<educacion>{
-    return this.http.delete<educacion>('http://localhost:8080/delete/educacion/{id}')
+    return this.http.delete<educacion>('https://porfolio-natalia.onrender.com/delete/educacion/{id}')
   }
 
   onEdit(educacion:educacion): Observable<educacion>{
-    return this.http.delete<educacion>('http://localhost:8080/edit/educacion')
+    return this.http.delete<educacion>('https://porfolio-natalia.onrender.com/edit/educacion')
   }
 
   addEducacion(id:number, educacion:educacion): Observable<any>{
-    return this.http.post<educacion>('http://localhost:8080/new/educacion', educacion)
+    return this.http.post<educacion>('https://porfolio-natalia.onrender.com/new/educacion', educacion)
   }
 
 }

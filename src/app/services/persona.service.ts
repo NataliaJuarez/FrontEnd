@@ -7,11 +7,11 @@ import { persona } from '../modelo/persona';
   providedIn: 'root'
 })
 export class PersonaService {
-  url='http://localhost:8080/';
+  url='https://porfolio-natalia.onrender.com/';
 
   constructor(private http:HttpClient) { }
 
   public verMiPerfil(): Observable<persona> {
-    return this.http.get<persona>('http://localhost:8080/ver/miperfil');
+    return this.http.get<persona>('https://porfolio-natalia.onrender.com/ver/miperfil');
   }
 }

@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    apiURL: "http://localhost:4200/",
+    apiURL: "https://porfolio-natalia.onrender.com",
     idPersona:1
 };

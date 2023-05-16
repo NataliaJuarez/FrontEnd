@@ -10,7 +10,7 @@ import { nuevoUsuario } from '../modelo/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://localhost:8080/auth/'
+  authURL = 'https://porfolio-natalia.onrender.com/auth/'
 
   constructor(private httpClient: HttpClient) { }
 

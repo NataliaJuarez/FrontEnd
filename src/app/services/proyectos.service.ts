@@ -7,11 +7,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProyectosService {
-  url='http://localhost:8080';
+  url='https://porfolio-natalia.onrender.com';
 
   constructor(private http:HttpClient) { }
 
   public verProyectos(): Observable<proyectos> {
-    return this.http.get<proyectos>('http://localhost:8080/ver/proyectos');
+    return this.http.get<proyectos>('https://porfolio-natalia.onrender.com/ver/proyectos');
   }
 }

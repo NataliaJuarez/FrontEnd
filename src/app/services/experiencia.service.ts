@@ -7,12 +7,12 @@ import { experiencia } from '../modelo/experience';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  url='http://localhost:8080';
+  url='https://porfolio-natalia.onrender.com';
 
   constructor(private http:HttpClient) { }
 
   public verExperiencia(): Observable<experiencia> {
-    return this.http.get<experiencia>('http://localhost:8080/ver/experiencia');
+    return this.http.get<experiencia>('https://porfolio-natalia.onrender.com/ver/experiencia');
   }
 }
 

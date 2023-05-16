@@ -7,11 +7,11 @@ import { habilidades } from '../modelo/skills';
   providedIn: 'root'
 })
 export class HabilidadesService {
-  url='http://localhost:8080';
+  url='https://porfolio-natalia.onrender.com';
 
   constructor(private http:HttpClient) { }
 
   public verHabilidades(): Observable<habilidades> {
-    return this.http.get<habilidades>('http://localhost:8080/ver/habilidades');
+    return this.http.get<habilidades>('https://porfolio-natalia.onrender.com/ver/habilidades');
   }
 }
