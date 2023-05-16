@@ -2,6 +2,15 @@
     <div class="logo">
         <a href="https://argentinaprograma.inti.gob.ar/"><img src="../../../assets/argpro.png" alt="Logo Argentina Programa" ></a>
     </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+            <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>                  
+        </ul>
+</div>
     <button type="button" (click)="login()" *ngIf="!isLogged">
         <fa-icon [icon]="faPersonWalkingArrowRight"></fa-icon>  
     </button>

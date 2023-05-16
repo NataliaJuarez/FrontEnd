@@ -12,5 +12,8 @@
                 <p>{{experiencia.descripcion}}</p>    
             </li>
         </ul>
+        <button class="b-add" type="button" routerLink="/new/experiencia" *ngIf="isLogged">
+            Añadir ítem
+        </button>
     </div>
 </section>

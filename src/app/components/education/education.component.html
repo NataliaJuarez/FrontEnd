@@ -1,25 +1,27 @@
 <section id="educacion" class="educacion">
-    <app-add-education></app-add-education>
-    <div class="contenido-seccion"> 
+    <div class="contenido-seccion">
         <h2>Educación</h2>
+        <div class="row">
             <div class="col">
                 <ul>
                     <li *ngFor="let educacion of educacionList" class="item">
                         <img [src]="educacion.logo" alt="logo">
-                        <h4>{{educacion.titulo}}                
+                        <h4>{{educacion.titulo}}
                         </h4>
                         <p class="lugar"><b>{{educacion.establecimiento}}</b></p>
-                        <p class="fecha">{{educacion.anio}}</p>    
+                        <p class="fecha">{{educacion.anio}}</p>
                     </li>
                 </ul>
-            </div>
-            <div class="col">
-              <!--  <fa-icon class="delete" [icon]="faTrash" (click)="onDelete()"></fa-icon> -->
-            </div>
-        </div>
-        <div class="fila">
 
+            </div>
+            <div class="col-xs-2">
+                <fa-icon class="delete" (click)="onDelete()" [icon]="faTrash"></fa-icon>
+                <!--agregar (click)="onDelete()"-->
+            </div>
         </div>
-    
-    
+        <button class="b-add" type="button" routerLink="/new/educacion" *ngIf="isLogged">
+            Añadir ítem
+        </button>
+    </div>
+
 </section>

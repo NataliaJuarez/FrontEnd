@@ -16,6 +16,16 @@ export class EducacionService {
     return this.http.get<educacion>('http://localhost:8080/ver/educacion');
   }
 
-  
+  onDelete(educacion:EducacionService): Observable<educacion>{
+    return this.http.delete<educacion>('http://localhost:8080/delete/educacion/{id}')
+  }
+
+  onEdit(educacion:educacion): Observable<educacion>{
+    return this.http.delete<educacion>('http://localhost:8080/edit/educacion')
+  }
+
+  addEducacion(id:number, educacion:educacion): Observable<any>{
+    return this.http.post<educacion>('http://localhost:8080/new/educacion', educacion)
+  }
 
 }

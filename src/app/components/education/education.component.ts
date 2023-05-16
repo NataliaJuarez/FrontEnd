@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';  
 import { faPen } from '@fortawesome/free-solid-svg-icons';
 import { EducacionService } from 'src/app/services/educacion.service';
+import { TokenService } from 'src/app/services/token.service';
 
 @Component({
   selector: 'app-education',
@@ -13,8 +14,9 @@ export class EducationComponent implements OnInit {
   faPen = faPen;
   //educacion = new educacion("","", new Date);
   educacionList : any;
+  isLogged = false;
 
-  constructor (private eduService: EducacionService  ) {}
+  constructor (private eduService: EducacionService, private tokenService: TokenService  ) {}
 
   ngOnInit(): void {
     this.eduService.verEducacion().subscribe(data => {
@@ -22,10 +24,16 @@ export class EducationComponent implements OnInit {
      this.educacionList=this.educacionList.reverse(); //para que muestre el último dato ingresado primero
      console.log(this.educacionList[0]);
     })
+
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
   }
 
 
-  onDelete(educacion: EducacionService ){
+  onDelete(){
     console.log("DELETE!");
   }
   

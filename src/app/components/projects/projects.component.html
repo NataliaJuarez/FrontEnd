@@ -1,21 +1,27 @@
 <section id="proyectos" class="proyectos">
-    <h2>Proyectos</h2>
-    <p>Proyectos realizados:</p>
-    <div class="contenido-habilidades">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <ul>
-                <li *ngFor="let proyectos of projectsList">
-                  <div class="card h-100">
-                    <img [src]="proyectos.imagenproyecto" class="card-img-top" alt="imagen de proyecto">
-                    <div class="card-body">
-                      <h5 class="card-title">{{proyectos.nombre}}</h5>
-                      <p class="card-text">{{proyectos.descripcion}}</p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-        </div>
-      </div> 
+  <h2>Proyectos</h2>
+  <p>Proyectos realizados:</p>
+  <div class="contenido-habilidades">
+    <div class="col-lg-12">
+      <table>
+        <tbody>
+          <td *ngFor="let proyectos of projectsList">
+            <tr>
+              <div class="card h-100">
+                <img [src]="proyectos.imagenproyecto" class="card-img-top" alt="imagen de proyecto">
+                <div class="card-body">
+                  <h5 class="card-title">{{proyectos.nombre}}</h5>
+                  <p class="card-text">{{proyectos.descripcion}}</p>
+                </div>
+              </div>
+            </tr>
+            <tr>
+              <fa-icon [icon]="faTrash" (click)="onDelete()"></fa-icon>
+              <fa-icon [icon]="faPen" (click)="onEdit()"></fa-icon>
+            </tr>
+          </td>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </section>

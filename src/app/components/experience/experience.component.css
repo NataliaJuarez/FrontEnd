@@ -13,6 +13,9 @@
     text-align: center;
     padding-bottom: 5px;
 }
+.experiencia ul.fila {
+    display: inline-block;
+}
 .experiencia ul li {
     list-style: none;
     padding: 15px;

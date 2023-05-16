@@ -17,7 +17,7 @@
    /* margin-top: 40px; no veo qué es lo que cambia */
     border: 1px transparent;
    /* display: block; no veo qué es lo que cambia*/
-    width: 80%; /*maneja el ancho de la imagen*/
+    width: 50%; /*maneja el ancho de la imagen*/
     margin: auto;
     border-radius: 100%;
 }

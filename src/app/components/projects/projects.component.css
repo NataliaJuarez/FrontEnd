@@ -11,10 +11,16 @@
 .proyectos p {
     font-size: 18px;
 }
-
-.proyectos .contenido-habilidades {
-    display: flex;
+.proyectos td{
+    margin: auto;
+    padding: 20px 35px 0 0; 
 }
+fa-icon{
+    padding: 10px;
+    float: right;
+}
+
+
 .card {
     background:  rgba(60, 51, 103, .1);
     color: #fff;

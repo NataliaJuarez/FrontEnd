@@ -20,6 +20,23 @@ header .logo h5{
     padding-top: 12px;
     position: relative;
 }
+header ul{
+    list-style: none;
+    display: flex;
+    padding: 5px 0;
+    margin: auto;
+    float: right;
+}
+
+header .menu ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+header .menu ul li a:hover{
+    color:#6664ff; 
+}
 
 button {                  
     font-family: 'Century gothic';

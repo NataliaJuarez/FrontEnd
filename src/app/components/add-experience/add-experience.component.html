@@ -1,69 +1,39 @@
-<div class="add-form">	
-    <i class="fa-solid fa-xmark"></i>
-	<h3>Añade un nuevo item</h3>
-	<form 
-	    class="form" 
-	    (ngSubmit)="onSubmit()"
-	    *ngIf="showAddExperiencia"
-	>
+<div class="contenedor">
+	<div class="add-expe">
+		<button type="button" class="close" routerLink="/portfolio"> <fa-icon [icon]="faXmark"></fa-icon> </button>
+		<h3>Añade un nuevo item</h3>
+		<form class="formu" (ngSubmit)="onSubmit()" novalidate #f="ngForm" *ngIf="showAddExperiencia">
+			
+				<label for="puesto">Puesto:</label>
+				<input type="text" name="puesto" id="puesto" placeholder="Añade el puesto" [(ngModel)]="puesto"
+					required>
+			
+				<label for="empresa">Empresa:</label>
+				<input type="text" name="empresa" id="empresa" placeholder="Añade la empresa" [(ngModel)]="empresa"
+					required>
+			
 
-		<div class="form-control">
-		    <label for="puesto">Puesto:</label>
-		    <input 
-		        type="text" 
-		        name="puesto" 
-		        id="puesto" 
-		        placeholder="Añade el puesto"
-		        [(ngModel)]="puesto"
-		    >
-		</div>
-
-		<div class="form-control">
-		    <label for="empresa">Empresa:</label>
-		    <input 
-		        type="text" 
-		        name="empresa" 
-		        id="empresa" 
-		        placeholder="Añade la empresa"
-		        [(ngModel)]="empresa"
-		    >
-		</div>
-
-		<div class="form-control fecha">
-			<p>Período:</p>
-			<div class="fila">
-				<label for="anio1">Desde:</label>
-				<input 
-					type="text"  
-					name="anio1" 
-					id="anio1"
-					[(ngModel)]="anio1"
-					placeholder="Año de inicio"
-				>
+			<div class="formu-control fecha">
+				<p>Período:</p>
+				<div class="fila">
+					<label for="anio1">Desde:</label>
+					<input type="text" name="anio1" id="anio1" [(ngModel)]="anio1" placeholder="Año de inicio">
+				</div>
+				<div class="fila">
+					<label for="anio2">Hasta:</label>
+					<input type="text" name="anio2" id="anio2" [(ngModel)]="anio2" placeholder="Año de finalización">
+				</div>
 			</div>
-			<div class="fila">
-				<label for="anio2">Hasta:</label>
-				<input 
-					type="text"  
-					name="anio2" 
-					id="anio2"
-					[(ngModel)]="anio2"
-					placeholder="Año de finalización"
-				>
-			</div>
-		</div>
 
-        <div class="form-control">
-			<p>Descripción:</p>
-			<textarea 
-				name="descripcion" 
-				id="descripcion"
-				cols="30"
-				rows="10" 
-				placeholder="Añade una descripción de las tareas realizadas"
-				[(ngModel)]="descripcion"
-			></textarea>
-		</div>
-    	<input type="submit" value="Guardar" class="form-button">
-	</form>
+			
+				<p>Descripción:</p>
+				<textarea name="descripcion" id="descripcion" cols="30" rows="6"
+					placeholder="Añade una descripción de las tareas realizadas" [(ngModel)]="descripcion"
+					required></textarea>
+			
+			<button type="submit" class="form-button">Guardar <i class="fa-regular fa-floppy-disk"></i></button>
+		</form>
+	</div>
 </div>
+
+<!--No entiendo por qué no se ve el contenido -->

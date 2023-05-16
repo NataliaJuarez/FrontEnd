@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProyectosService } from 'src/app/services/proyectos.service';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faPen } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -7,6 +9,8 @@ import { ProyectosService } from 'src/app/services/proyectos.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
+  faTrash = faTrash;
+  faPen = faPen;
   //projects = new proyectos("","","");   
   projectsList : any;
 

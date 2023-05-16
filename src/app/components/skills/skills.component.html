@@ -1,56 +1,24 @@
 <section id="habilidades" class="habilidades">
     <div class="contenido-habilidades">
         <h2>Habilidades</h2>
-        <div class="fila">
-            <h4>FrontEnd</h4>
-            <h6>HTML</h6>
-            <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Básico</div>
-            </div>
-            <h6>CSS</h6>
-            <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Básico</div>
-            </div>
-            <h6>Javascript</h6>
-            <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Básico</div>
-            </div>
-            <h6>Typescript</h6>
-            <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Básico</div>
-            </div>
-            <h6>Angular</h6>
-            <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Básico</div>
-            </div>
-            <h6>Bootstrap</h6>
-            <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Básico</div>
+        <div class="col">
+            <div class="col-lg-12">
+                <ul *ngFor="let skills of skillsList">
+                    <li>
+                        <h6>{{skills.nombre}}</h6>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                                style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                {{skills.nivel}}</div>
+                        </div>
+                        <div>
+                            <fa-icon [icon]="faTrash" (click)="onDelete()"></fa-icon>
+                            <fa-icon [icon]="faPen" (click)="onEdit()"></fa-icon>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="fila">
-            <h4>BackEnd</h4>
-            <h6>Java / SpringBoot</h6>
-            <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Básico</div>
-            </div>
-            <h6>MySQL</h6>
-            <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Básico</div>
-            </div>
-        </div>
-        <div class="fila">
-            <h4>Soft-Skills</h4>
-            <ul>
-                <li>
-                    <i class="fa-regular fa-circle-check"></i>
-                Colaboración</li>
-                <li><i class="fa-regular fa-circle-check"></i>
-                Adaptabilidad</li>
-                <li><i class="fa-regular fa-circle-check"></i>
-                Creatividad</li>
-                <li></li>                   
-            </ul>
-            </div>
-        </div>
+    </div>
 </section>
+
