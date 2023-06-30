@@ -1,85 +1,130 @@
-.contacto{                  
-    padding: 50px;
-}
-.contacto .contenido-seccion{     /*cambia la ubicación de los elementos*/
-    max-width: 1100px;
-	margin: auto;
-    text-align: center;
-}
-.contacto .contenido-seccion .bloque{
-    display: flex;
-    justify-content: space-between;
-}
-.contacto .contenido-seccion h2{               
-    font-size: 48px;
-    font-family: 'Gruppo';
-    text-align: center;
-    padding: 20px;
-}
-.bloque {
-    padding: 20px 0 50px;
-}
-.bloque .ubicacion, .social, .mail{ 
-    margin: auto;
-    display: flex;
-  /*  box-sizing: border-box; */ 
-}
-.bloque span {
-    width: 300px; 
-    height: 115px; 
-    background-color: rgba(60, 51, 103, 0.2);
-    border-radius: 25px;
-    padding: 20px;
-    color: white;
-    margin: auto;
-    line-height: 20px;
-    align-items: center;
-    /*box-shadow: rgba(59, 79, 207, 0.5) 0px 1px 2px 0px; efecto para que tengan sombra las tarjetas*/ 
-}
-.bloque .fa-solid, .fa-regular{
-    font-size: 25px;
-    color: rgba(59,79,207, 1);
-}
-.bloque .fa-brands {
-    font-size: 22px;
-    color: white;
-}
-.bloque .fa-brands a:visited {
-  color: none;
+.contacto {
+    padding: 15px 50px 25px;
 }
 
-.contacto input, .contacto textarea{   /* modifica el formatodiseño de los cuadros de relleno de contacto */
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto .card {
+    height: 100px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: rgba(60, 51, 103, 0.2);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contacto p {
+    padding-top: 10px;
+}
+
+.contacto .fa-bounce {
+    font-size: 25px;
+    padding: 10px 0 7px;
+    color: rgb(59, 79, 207);
+}
+
+.contacto .redes i {
+    padding: 10px 10px 0 0;
+    text-decoration: none;
+    font-size: 25px;
+    color: #d0d0d0;
+}
+
+.redes a:visited {
+    color: none;
+}
+
+.f-container {
+    margin-top: 15px;
+    border-top: 1px solid rgb(59, 79, 207);
+    border-bottom: 1px solid rgb(59, 79, 207);
+}
+
+.contacto .f-container p {
+    margin: 20px 0;
+    padding-top: 0;
+    line-height: 18px;
+}
+
+.f-container h3 {
+    margin: 30px 0 15px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.contacto input,
+.contacto textarea {
     display: block;
-    width: 100%;
-    padding: 18px;
+    width: 50%;
+    padding: 5px 18px;
     border: none;
-    margin-bottom: 20px;
-    margin-right: 350px;
+    margin: auto;
+    margin-bottom: 15px;
     background-color: rgb(60, 51, 103);
     border-radius: 17px;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
 }
 
-.contacto button{               /* modifica el formato/diseño del botón enviar +*/
-    cursor: pointer;
+.contacto button {
     background-color: transparent;
     border: 1px solid #fff;
-    border-radius: 10px;
-    width: fit-content;
+    border-radius: 20px;
     display: block;
-    margin: 20px auto;
-    padding: 12px 20px;
+    margin: 20px auto 0;
+    padding: 5px 14px;
     font-size: 18px;
     color: #fff;
     position: relative;
     z-index: 10;
-    font-family: 'century gothic';
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.2s;
 }
-.contacto button:hover{
-    font-size: 20px;
-    border: 3px solid rgba(59,79,207, 1);
-    color: rgba(59,79,207, 1);
-    font-weight: bold;
 
+.contacto button:hover {
+    font-size: 19px;
+    background-color: white;
+    color: rgba(59, 79, 207, 1);
+    font-weight: bold;
+    text-decoration: blink;
+}
+
+.img img {
+    margin-top: -25px;
+}
+
+.img .msj-img {
+    float: right;
+    margin-top: 0;
+}
+
+@media (max-width: 991px) {
+    .contacto p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 530px) {
+    .img .avion-img {
+        height: 100px;
+        margin-top: -15px;
+    }
+
+    .img .msj-img {
+        height: 45px;
+    }
+}
+
+@media (max-width: 470px) {
+    .img {
+        display: none;
+    }
+
+    .form-container {
+        border-bottom: none;
+    }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faPen } from '@fortawesome/free-solid-svg-icons';
 import { persona } from 'src/app/modelo/persona';
 import { PersonaService } from 'src/app/services/persona.service';
+import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,7 @@ import { PersonaService } from 'src/app/services/persona.service';
 export class HomeComponent implements OnInit {
   persona = new persona("","","","","","","","","","","");
   faPen = faPen;
+  faPenToSquare = faPenToSquare;
 
   constructor(private perService: PersonaService) {
 

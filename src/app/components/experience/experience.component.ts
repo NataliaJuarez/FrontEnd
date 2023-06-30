@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ExperienciaService } from 'src/app/services/experiencia.service';
 import { TokenService } from 'src/app/services/token.service';
 
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import { faPen } from '@fortawesome/free-solid-svg-icons';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-experience',
@@ -12,9 +12,9 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  faTrash = faTrash; 
-  faPen = faPen;
-  faPlus = faPlus;
+  faTrashCan = faTrashCan; 
+  faPenToSquare = faPenToSquare;
+
 
   experienciaList : any;
   isLogged = false;

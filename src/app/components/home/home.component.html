@@ -2,13 +2,14 @@
     <div class="contenido-banner">
         <div class="contenedor-img">
             <img [src]="persona.fotoperfil" alt="imagen de perfil">
-            <fa-icon [icon]="faPen" class="edit-img" (click)="onEdit()"></fa-icon>
+            <!-- <a href="https://www.flaticon.es/iconos-gratis/usuario" title="usuario iconos">Usuario iconos creados por feen - Flaticon</a> -->
         </div>
-        <h1>{{persona.nombre}} {{persona.apellido}}
-            <fa-icon [icon]="faPen" class="edit-info" (click)="onEdit()"></fa-icon>
-        </h1>
+        <h1>{{persona.nombre}} {{persona.apellido}}</h1>
         <h2>{{persona.profesion}}</h2>
+        <button type="button" routerLink="/edit/persona"> <!--agregar el *ngIf="isLogged"-->
+            <fa-icon [icon]="faPenToSquare"></fa-icon>
+            Editar perfil
+        </button>
     </div>	
 </section>  
 
-<!-- <a href="https://www.flaticon.es/iconos-gratis/usuario" title="usuario iconos">Usuario iconos creados por feen - Flaticon</a> -->

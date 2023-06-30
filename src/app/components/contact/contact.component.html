@@ -1,32 +1,52 @@
 <section id="contacto" class="contacto">
-    <div class="contenido-seccion">
-        <h2>Contacto</h2>
-        <div class="bloque">
-            <div class="ubicacion">
-                <span>
-                    <i class="fa-solid fa-location-dot fa-bounce"></i><br><br>
-                    {{persona.ciudad}}, {{persona.provincia}}, {{persona.pais}}
-                </span>
-            </div>
-            <div class="mail">
-                <span>
-                    <i class="fa-regular fa-envelope fa-bounce"></i><br><br>
-                    {{persona.mail}}
-                </span>
-            </div>
-            <div class="social">
-                <span>
-                    <i class="fa-solid fa-hashtag fa-bounce"></i><br><br>
-                    <a href="https://github.com/NataliaJuarez"><i class="fa-brands fa-github"></i></a>
-                </span>
-            </div>
+  <div class="contenido-seccion">
+    <h2 class="titulo-seccion">Contacto</h2>
+    <div class="container text-center">
+      <div class="row row-cols-3 g4">
+        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+          <div class="card">
+            <i class="fa-solid fa-location-dot fa-bounce"></i>
+            <p>{{persona.ciudad}}, {{persona.provincia}}, {{persona.pais}}</p>
+          </div>
         </div>
-        <div class="formulario">    	
-            <input type="text" placeholder="Nombre" required>
-            <input type="text" placeholder="Apellido" required>
-            <input type="email" placeholder="Email" required> 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea> <!--cuando quito el padding que hace que no estén centrados los input y el textarea, el placeholder queda muy pegado al borde. Por mas que de espacio para que se vean bien, al escribir se ve pegado al borde. quizas funcione colocando dentro de un div toda esa parte-->
-        </div>    
-        <button>¡Enviar!</button>
+        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+          <div class="card">
+            <i class="fa-regular fa-envelope fa-bounce"></i>
+            <p>{{persona.mail}}</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+          <div class="card">
+            <i class="fa-solid fa-hashtag fa-bounce"></i>
+            <div class="redes">
+              <a href="https://github.com/NataliaJuarez" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferer">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section> 
+    <div class="f-container">
+      <p>Si tienes un proyecto en el que quieres que forme parte, puedes contactarme a través de un email o
+        dejándome un mensaje con tus datos para que pueda contactarte. ¡Creemos un proyecto juntos!</p>
+      <div class="formulario">
+        <h3>¡Deja tu mensaje!</h3>
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Apellido" required>
+        <input type="email" placeholder="Email" required>
+        <textarea name="" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
+      </div>
+      <button>¡Enviar!</button>
+      <div class="container img">
+        <img class="avion-img" src="../../../assets/correo.png" alt="imagen de correo">
+        <!-- <a href="https://www.flaticon.es/iconos-gratis/correo" title="correo iconos">Correo iconos creados por Freepik - Flaticon</a> -->
+        <img class="msj-img" src="../../../assets/mensaje.png" alt="imagen de carta">
+        <!-- <a href="https://www.flaticon.es/iconos-gratis/letra" title="letra iconos">Letra iconos creados por Arkinasi - Flaticon</a> -->
+      </div>
+    </div>
+  </div>
+</section>

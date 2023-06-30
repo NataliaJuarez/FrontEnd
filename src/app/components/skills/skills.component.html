@@ -1,24 +1,59 @@
 <section id="habilidades" class="habilidades">
-    <div class="contenido-habilidades">
-        <h2>Habilidades</h2>
-        <div class="col">
-            <div class="col-lg-12">
-                <ul *ngFor="let skills of skillsList">
-                    <li>
-                        <h6>{{skills.nombre}}</h6>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-label="Example with label"
-                                style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                {{skills.nivel}}</div>
-                        </div>
-                        <div>
-                            <fa-icon [icon]="faTrash" (click)="onDelete()"></fa-icon>
-                            <fa-icon [icon]="faPen" (click)="onEdit()"></fa-icon>
-                        </div>
-                    </li>
-                </ul>
+  <div class="contenido-habilidades">
+    <h2 class="titulo-seccion">Habilidades</h2>
+    <div class="container"></div>
+    <div class="row">
+      <!-- FRONTEND -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <h6 class="text-center">FrontEnd</h6>
+        <ul *ngFor="let skills of skillsList"> 
+          <li>
+            &nbsp;{{skills.nombre}}
+            <button class="edit-btn" (click)="onDelete()">
+              <fa-icon [icon]="faTrashCan"></fa-icon>
+            </button>
+            <button class="edit-btn" (click)="onEdit()">
+              <fa-icon [icon]="faPenToSquare"></fa-icon>
+            </button>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                {{skills.nivel}}</div>
             </div>
-        </div>
+          </li>
+        </ul>
+      </div>
+      <!-- BACKEND -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <h6 class="text-center">Backend</h6>
+        <!-- <ul *ngFor="let skills of skillsList">
+          <li>
+            &nbsp;{{skills.nombre}}
+            <button class="edit-btn"><fa-icon [icon]="faTrashCan" (click)="onDelete()"></fa-icon></button>
+            <button class="edit-btn"><fa-icon [icon]="faPenToSquare" (click)="onEdit()"></fa-icon></button>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                {{skills.nivel}}</div>
+            </div>
+          </li>
+        </ul>  -->
+      </div> 
+       <!-- SOFTSKILLS  -->
+      <div class="col-12 col-sm-6 col-md-4 softskills">
+        <h6 class="text-center">SOFTSKILLS</h6>
+    <!--    <ul *ngFor="let skills of skillsList">   tengo que hacer una lista aparte para soft y los dos de hard-->
+          <!-- <li>
+            <fa-icon [icon]="faCircleCheck"></fa-icon>
+            {{skills.nombre}}
+            <button class="edit-btn"><fa-icon [icon]="faTrashCan" (click)="onDelete()"></fa-icon></button>
+            <button class="edit-btn"><fa-icon [icon]="faPenToSquare" (click)="onEdit()"></fa-icon></button>
+          </li>
+        </ul>   -->
+      </div>
     </div>
+    <button class="b-add" type="button" routerLink="/new/habilidades">
+      Añadir ítem
+    </button>
+  </div>
 </section>
-

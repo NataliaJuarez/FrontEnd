@@ -1,19 +1,25 @@
 <section id="experiencia" class="experiencia">
-    <div class="contenido-seccion"> 
-        <h2>Experiencia Laboral</h2>
-        <ul>
-            <li *ngFor="let experiencia of experienciaList" class="item">
-                <h4>{{experiencia.puesto}}
-                    <fa-icon [icon]="faPen" (click)="onEdit()"></fa-icon>
-                </h4>
-               <!-- <fa-icon class="delete" [icon]="faTrash" (click)="onDelete()"></fa-icon> -->
-                <span class="lugar">{{experiencia.empresa}}</span>
-                <span class="fecha">{{experiencia.anio1}} {{experiencia.anio2}}</span>
-                <p>{{experiencia.descripcion}}</p>    
-            </li>
-        </ul>
-        <button class="b-add" type="button" routerLink="/new/experiencia" *ngIf="isLogged">
-            Añadir ítem
-        </button>
-    </div>
+  <div class="contenido-seccion">
+    <h2 class="titulo-seccion">Experiencia Laboral</h2>
+    <ul>
+      <li *ngFor="let experiencia of experienciaList" class="item">
+        <h4>{{experiencia.puesto}}</h4>
+        <p class="lugar">{{experiencia.empresa}}</p>
+        <p class="fecha">{{experiencia.anio1}} - {{experiencia.anio2}}</p>
+        <p>{{experiencia.descripcion}}</p>
+        <div class="edicion">
+          <button class="edit-btn" (click)="onDelete()" *ngIf="isLogged">
+            <fa-icon [icon]="faTrashCan"></fa-icon>
+          </button>
+          <button class="edit-btn" (click)="onEdit()" *ngIf="isLogged">
+            <fa-icon [icon]="faPenToSquare"></fa-icon>
+          </button>
+        </div>
+      </li>
+    </ul>
+    <button class="b-add" type="button" routerLink="/new/experiencia" *ngIf="isLogged">
+      Añadir ítem
+    </button>
+  </div>
 </section>
+

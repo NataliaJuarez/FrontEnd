@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HabilidadesService } from 'src/app/services/habilidades.service';
-import { faPen } from '@fortawesome/free-solid-svg-icons';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-skills',
@@ -9,8 +10,9 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-  faPen = faPen;
-  faTrash = faTrash;
+  faPenToSquare = faPenToSquare;
+  faTrashCan = faTrashCan;
+  faCircleCheck = faCircleCheck;
   skillsList: any;
   
   constructor (private habiService: HabilidadesService) {}

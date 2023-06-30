@@ -2,6 +2,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { habilidades } from 'src/app/modelo/skills';
 import { UiHabilidadesService } from 'src/app/services/uihabilidades.service';
+import { faFloppyDisk } from '@fortawesome/free-regular-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-add-skill',
@@ -9,6 +11,8 @@ import { UiHabilidadesService } from 'src/app/services/uihabilidades.service';
   styleUrls: ['./add-skill.component.css']
 })
 export class AddSkillComponent implements OnInit {
+  faFloppyDisk = faFloppyDisk;
+  faXmark = faXmark;
 
   @Output() onAddEducacion: EventEmitter<habilidades> = new EventEmitter();
 

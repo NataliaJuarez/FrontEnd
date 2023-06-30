@@ -1,36 +1,49 @@
-.habilidades{
-    padding: 50px;
-    margin: auto;   
+.habilidades {
+    padding: 50px 80px;
+    margin: auto;
 }
-.habilidades .contenido-seccion{
-    max-width: 1100px;
+
+.habilidades .contenido-seccion {
+    max-width: 1400px;
+    margin: auto;
 }
-.contenido-habilidades h2{
-    font-size: 48px;
-    font-family: 'Gruppo';
+
+.habilidades h2 {
+    margin-bottom: 15px;
+}
+
+.habilidades h5 {
+    margin: 15px 0 20px;
     text-align: center;
 }
-.habilidades h4 {
-    margin-bottom: 20px;
+
+.habilidades ul li {
+    margin-top: 7px;
 }
-.habilidades .fila {
-    width: 400px;
-    height: 400px;
-    padding: 050px;
-    display: inline-table;
-    margin: 45px;
+
+.softskills fa-icon.i-check {
+    color: rgb(59, 79, 207);
 }
+
 .habilidades .progress {
+    margin-top: 2px;
     background-color: transparent;
-    border: 1px solid rgb(59,79,207);
-    width: 500px;
+    border: 1px solid rgb(59, 79, 207);
 }
 
 .progress .progress-bar {
-    background-color: rgb(59,79,207);
+    background-color: rgb(59, 79, 207);
     padding: 30px;
 }
 
 .habilidades ul li {
     list-style: none;
+}
+
+.habilidades .softskills .edit-btn {
+    padding: 0 7px;
+}
+
+.b-add {
+    margin-top: 20px;
 }

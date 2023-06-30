@@ -1,27 +1,41 @@
-<section id="proyectos" class="proyectos">
-  <h2>Proyectos</h2>
-  <p>Proyectos realizados:</p>
-  <div class="contenido-habilidades">
-    <div class="col-lg-12">
-      <table>
-        <tbody>
-          <td *ngFor="let proyectos of projectsList">
-            <tr>
-              <div class="card h-100">
-                <img [src]="proyectos.imagenproyecto" class="card-img-top" alt="imagen de proyecto">
-                <div class="card-body">
-                  <h5 class="card-title">{{proyectos.nombre}}</h5>
-                  <p class="card-text">{{proyectos.descripcion}}</p>
+<section id="proyectos" class="proyectos d-flex flex-column">
+  <div class="contenido-seccion">
+    <h2 class="titulo-seccion">Proyectos</h2>
+    <div class="small-divider"></div>
+    <div class="proyectos-contenedor text-center">
+      <ul class="row text-center">
+        <li class="col-12 col-md-6 col-lg-4" *ngFor="let proyectos of projectsList">
+          <div class="proyecto">
+            <div class="card h-100">
+              <img [src]="proyectos.imagenproyecto" class="card-img-top" alt="imagen de proyecto">
+              <div class="overlay">
+                <h4>{{proyectos.nombre}}</h4>
+                <div class="iconos-contenedor text-center">
+                  <!-- <a href="" target="_blank" rel="noopener noreferrer"> -->
+                    <!-- target _blank para que se abra en una pestaña nueva... noopener noreferer es por temas de seguridad -->
+                    <fa-icon [icon]="faGithub"></fa-icon>
+                  <!-- </a> -->
+                  <!-- <a href="" target="_blank" rel="noopener noreferrer"> -->
+                    <!-- acá iría link del proyecto en vivo (?)-->
+                    <fa-icon [icon]="faLaptop"></fa-icon>
+                  <!-- </a> -->
                 </div>
               </div>
-            </tr>
-            <tr>
-              <fa-icon [icon]="faTrash" (click)="onDelete()"></fa-icon>
-              <fa-icon [icon]="faPen" (click)="onEdit()"></fa-icon>
-            </tr>
-          </td>
-        </tbody>
-      </table>
+              <div class="edicion">
+                <button class="edit-btn" (click)="onDelete()">
+                  <fa-icon [icon]="faTrashCan"></fa-icon>
+                </button>
+                <button class="edit-btn" (click)="onEdit()">
+                  <fa-icon [icon]="faPenToSquare"></fa-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button class="b-add" type="button" routerLink="/new/proyecto"> <!--agregar *ngIf="isLogged" -->
+        Añadir ítem
+      </button>
     </div>
   </div>
 </section>

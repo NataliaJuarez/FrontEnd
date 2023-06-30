@@ -1,51 +1,42 @@
 .educacion{
-    padding: 50px;
+    padding: 70px 50px 50px;
 }
 .educacion .contenido-seccion{
-    max-width: 1100px;
+    max-width: 1500px;
     margin: auto;
     text-align: center;
     padding-bottom: 15px;
 }
-.educacion  h2{
-    font-size: 48px;
-    font-family: 'Gruppo';
-    text-align: center;
-    padding-bottom: 5px;
-}
+
 .educacion ul li {
     list-style: none;
-    padding: 15px;
-    margin: 30px;
 }
 .educacion ul li img {
-    width: 100px;
+    width: 120px;
+    padding-bottom: 10px;
 }
 .educacion .item {
     background-color: rgba(60, 51, 103, .05);
     border-radius: 20px;
-}
-.educacion ul li h4 {
-    font-size: 20px;
-    padding: 7px 0;
-}
-.educacion .contenido-seccion p {
-    font-size: 18px;
-    line-height: 22px;
-    margin: 10px 0;
-}
-.educacion .lugar, .experiencia .fecha{
-    margin: auto;
-}
-fa-Icon {
-    float: right;
-    font-size: 15px;
-    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
-fa-Icon:hover{
-    color: #00ff4c;
-    background-color: black;
-    border: 5px solid black;
-    border-radius: 15px;
+.educacion li .col-md-4 {
+    padding: 0 15px
+}
+
+.educacion ul li h4 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5px;
+}
+.educacion .contenido-seccion p {
+    color: darkgray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.educacion .contenido-seccion p.fecha {
+    font-size: 13px;
+    margin-bottom: 0;
 }

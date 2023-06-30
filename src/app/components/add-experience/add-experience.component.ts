@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import { experiencia } from 'src/app/modelo/experience';
 import { UiExperienciaService } from 'src/app/services/uiexperiencia.service';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faFloppyDisk } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-add-experience',
@@ -12,6 +13,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 })
 export class AddExperienceComponent implements OnInit {
   faXmark = faXmark;
+  faFloppyDisk = faFloppyDisk;
   
   @Output() onAddExperiencia: EventEmitter<experiencia> = new EventEmitter();
 

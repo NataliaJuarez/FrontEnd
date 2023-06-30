@@ -1,27 +1,30 @@
 <section id="educacion" class="educacion">
-    <div class="contenido-seccion">
-        <h2>Educación</h2>
-        <div class="row">
-            <div class="col">
-                <ul>
-                    <li *ngFor="let educacion of educacionList" class="item">
-                        <img [src]="educacion.logo" alt="logo">
-                        <h4>{{educacion.titulo}}
-                        </h4>
-                        <p class="lugar"><b>{{educacion.establecimiento}}</b></p>
-                        <p class="fecha">{{educacion.anio}}</p>
-                    </li>
-                </ul>
-
+  <div class="contenido-seccion">
+    <h2 class="titulo-seccion">Educación</h2>
+    <div class="container">
+      <ul class="row text-center">
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3" *ngFor="let educacion of educacionList">
+          <div class="item">
+            <!-- <a href="" target="_blank"> -->
+              <img [src]="educacion.logo" alt="logo">
+            <!-- </a> -->
+            <p class="lugar">{{educacion.establecimiento}}</p>
+            <h4>{{educacion.titulo}}</h4>
+            <p class="fecha">{{educacion.anio}}</p>
+            <div class="edicion">
+              <button class="edit-btn" (click)="onDelete()" *ngIf="isLogged">
+                <fa-icon [icon]="faTrashCan"></fa-icon>
+              </button> 
+              <button class="edit-btn" (click)="onEdit()" *ngIf="isLogged">
+                <fa-icon class="delete"[icon]="faPenToSquare"></fa-icon>
+              </button>
             </div>
-            <div class="col-xs-2">
-                <fa-icon class="delete" (click)="onDelete()" [icon]="faTrash"></fa-icon>
-                <!--agregar (click)="onDelete()"-->
-            </div>
-        </div>
-        <button class="b-add" type="button" routerLink="/new/educacion" *ngIf="isLogged">
-            Añadir ítem
-        </button>
+          </div>
+        </li>
+      </ul>
+      <button class="b-add" type="button" routerLink="/new/educacion" *ngIf="isLogged">
+        Añadir ítem
+      </button>
     </div>
-
+  </div>
 </section>

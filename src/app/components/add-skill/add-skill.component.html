@@ -1,1 +1,42 @@
-<p>add-skill works!</p>
+<div class="form-container">
+  <div class="add-form">
+    <button type="button" class="close" routerLink="/portfolio"> <fa-icon [icon]="faXmark"></fa-icon> </button>
+    <h2>Añade un nuevo item</h2>
+    <form class="formu" (ngSubmit)="onSubmit()" novalidate #f="ngForm">
+      <!-- con *ngIf="showAddEducacion" no se ve el formulario -->
+
+      <div class="form-item">
+        <label for="tipo">Tipo de habilidad:</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Selecciona el tipo</option>
+          <option value="1">FrontEnd</option>
+          <option value="2">Backend</option>
+          <option value="3">SoftSkill</option>
+        </select>
+      </div>
+
+      <div class="form-item">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Añade el nombre de tu nueva habilidad" [(ngModel)]="nombre">
+      </div>
+
+      <div class="form-item">
+        <label for="nivel">Nivel:</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" [(ngModel)]="nivel">
+          <label class="form-check-label" for="inlineRadio1">Principiante</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" [(ngModel)]="nivel">
+          <label class="form-check-label" for="inlineRadio2">Intermedio</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" [(ngModel)]="nivel">
+          <label class="form-check-label" for="inlineRadio3">Avanzado</label>
+        </div>
+      </div>
+
+      <button type="submit" class="save-btn">Guardar <fa-icon [icon]="faFloppyDisk"></fa-icon> </button>
+    </form>
+  </div>
+</div>

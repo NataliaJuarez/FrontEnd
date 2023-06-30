@@ -1,36 +1,33 @@
 footer{
     background: rgba(24, 4, 39, 1);
-    padding: 20px 0 15px 0;
+    padding: 20px 0 9px 0;
     text-align: center;
     position: relative;
     width: 100%;
 }
+
+footer p {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 footer .volver{
     display: block;
     width: 25px;
     height: 25px;
+    font-size: 30px;
+    margin-top: -5px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: -25px;
     line-height: 50px;
     font-size: 18px;
+    color: rgb(59, 79, 207);
+    transition: 0.2s;
 }
 footer .volver:hover{
-    color: #00ff4c;
-    border-color: #00ff4c;
     text-decoration: blink;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 19px;
 }
-
-
-.divider {
-    border-bottom: 2px dashed #0c3b3b;
-    margin: 2px 0;
-    width: 90vw;
-    margin: auto;
-  }
-  .large {
-    height: 10px;
-  }
+  

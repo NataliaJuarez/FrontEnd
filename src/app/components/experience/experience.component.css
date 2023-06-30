@@ -1,52 +1,42 @@
-.experiencia{
+.experiencia {
     padding: 50px;
 }
-.experiencia .contenido-seccion{
-    max-width: 1100px;
+
+.experiencia .contenido-seccion {
+    max-width: 1000px;
     margin: auto;
-    text-align: center;
-    padding-bottom: 15px;
 }
-.experiencia  h2{
-    font-size: 48px;
-    font-family: 'Gruppo';
-    text-align: center;
-    padding-bottom: 5px;
-}
-.experiencia ul.fila {
-    display: inline-block;
-}
+
 .experiencia ul li {
     list-style: none;
-    padding: 15px;
-    margin: 30px;
+    padding: 30px 20px 15px 30px;
+    margin: 30px 30px 0;
 }
+
 .experiencia .item {
     background-color: rgba(60, 51, 103, .05);
     border-radius: 20px;
-}
-.experiencia ul li h4 {
-    font-size: 20px;
-    padding: 7px 0;
-}
-.experiencia .contenido-seccion p{
-    display: flex;
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 20px;
-}
-.experiencia .lugar, .experiencia .fecha{
-    margin: auto;
-}
-fa-Icon {
-    float: right;
-    font-size: 15px;
-    cursor: pointer;
+    border-bottom: 1px solid rgb(8, 8, 62);
+    border-left: 1px solid rgb(8, 8, 62);
 }
 
-fa-Icon:hover{
-    color: #00ff4c;
-    background-color: black;
-    border: 5px solid black;
-    border-radius: 15px;
+.experiencia ul li h4 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.experiencia .contenido-seccion p {
+    display: flex;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.experiencia .lugar,
+.experiencia .fecha {
+    margin: auto;
+    color: #b5b3b6;
+}
+
+.experiencia .b-add {
+    margin-top: 30px;
 }

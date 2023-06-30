@@ -1,20 +1,51 @@
 <header>
-    <div class="logo">
-        <a href="https://argentinaprograma.inti.gob.ar/"><img src="../../../assets/argpro.png" alt="Logo Argentina Programa" ></a>
-    </div>
-    <div class="menu">
-        <ul>
-            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-            <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
-            <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
-            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>                  
+  <div class="logo">
+    <a href="https://argentinaprograma.inti.gob.ar/"><img src="../../../assets/argpro.png"
+        alt="Logo Argentina Programa"></a>
+        <p>#YoProgramo..<span> &#160; </span></p>
+  </div>
+  <div class="menu pantalla-grande">
+    <ul class="pantalla-grande">
+      <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+      <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+      <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+      <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+    </ul>
+  </div>
+  <div class="menu">
+    <ul class="pantalla-pequeña">
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <ul class="dropdown-menu text-center">
+          <li><a class="dropdown-item" href="#inicio">Inicio</a></li>
+          <li><a class="dropdown-item" href="#sobremi">Sobre mí</a></li>
+          <li><a class="dropdown-item" href="#proyectos">Proyectos</a></li>
+          <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <button class="dropdown-item login pantalla-pequeña text-center" type="button" (click)="login()"
+              *ngIf="!isLogged">
+              Iniciar Sesión
+              <fa-icon [icon]="faRightToBracket"></fa-icon>
+            </button>
+            <button class="dropdown-item login pantalla-pequeña text-center" type="button" (click)="onLogOut()"
+              *ngIf="isLogged">
+              Cerrar Sesión
+              <fa-icon [icon]="faRightFromBracket"></fa-icon>
+            </button>
+          </li>
         </ul>
-</div>
-    <button type="button" (click)="login()" *ngIf="!isLogged">
-        <fa-icon [icon]="faPersonWalkingArrowRight"></fa-icon>  
-    </button>
-    <button type="button" (click)="onLogOut()" *ngIf="isLogged">
-        <fa-icon [icon]="faRightFromBracket"></fa-icon>   
-    </button>
+      </li>
+    </ul>
+  </div>
+  <button class="pantalla-grande login" type="button" (click)="login()" *ngIf="!isLogged">
+    <fa-icon [icon]="faPersonWalkingArrowRight"></fa-icon>
+  </button>
+  <button class="pantalla-grande logout" type="button" (click)="onLogOut()" *ngIf="isLogged">
+    <fa-icon [icon]="faRightFromBracket"></fa-icon>
+  </button>
 </header>

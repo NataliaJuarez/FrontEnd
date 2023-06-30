@@ -3,6 +3,8 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { faPen } from '@fortawesome/free-solid-svg-icons';
 import { EducacionService } from 'src/app/services/educacion.service';
 import { TokenService } from 'src/app/services/token.service';
+import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-education',
@@ -10,8 +12,8 @@ import { TokenService } from 'src/app/services/token.service';
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent implements OnInit {
-  faTrash = faTrash; 
-  faPen = faPen;
+  faTrashCan = faTrashCan; 
+  faPenToSquare = faPenToSquare;
   //educacion = new educacion("","", new Date);
   educacionList : any;
   isLogged = false;

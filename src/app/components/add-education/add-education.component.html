@@ -1,71 +1,51 @@
-<div class="add-form">	
-    <button type="button" class="close" routerLink="/portfolio"> <fa-icon [icon]="faXmark"></fa-icon> </button>
-	<h3>Añade un nuevo item</h3>
-	<form 
-	    class="form" 
-	    (ngSubmit)="onSubmit()"
-		novalidate #f="ngForm"
-	    *ngIf="showAddEducacion"
-	>
+<div class="form-container">	
+	<div class="add-form">
+		<button type="button" class="close" routerLink="/portfolio"> <fa-icon [icon]="faXmark"></fa-icon> </button>
+		<h2>Añade un nuevo item</h2>
+		<form class="formu" (ngSubmit)="onSubmit()" novalidate #f="ngForm"> <!-- con *ngIf="showAddEducacion" no se ve el formulario -->
 
-		<div class="formu">
-		    <label for="titulo">Título:</label>
-		    <input 
-		        type="text" 
-		        name="titulo" 
-		        id="titulo" 
-		        placeholder="Añade título obtenido o nombre del curso"
-		        [(ngModel)]="titulo"
-		    >
-		</div>
-
-		<div class="formu">
-		    <label for="establecimiento">Establecimiento:</label>
-		    <input 
-		        type="text" 
-		        name="establecimiento" 
-		        id="establecimiento" 
-		        placeholder="Añade el establecimiento"
-		        [(ngModel)]="establecimiento"
-		    >
-		</div>
-
-		<div class="formu">
-			<p>Período:</p>
-		    <div class="fila">
-				<label for="anio1">Desde:</label>
-				<input 
-					type="text"  
-					name="anio1" 
-					id="anio1"
-					[(ngModel)]="anio1"
-					placeholder="Año de inicio"
-				>
+			<div class="form-item">
+				<label for="titulo">Título:</label>
+				<input type="text" name="titulo" id="titulo" placeholder="Añade título obtenido o nombre del curso"
+					[(ngModel)]="titulo" required>
 			</div>
-			<div class="fila">
-				<label for="anio2">Hasta:</label>
-				<input 
-					type="text"  
-					name="anio2" 
-					id="anio2"
-					[(ngModel)]="anio2"
-					placeholder="Año de finalización"
-				>
+
+			<div class="form-item">
+				<label for="establecimiento">Establecimiento:</label>
+				<input type="text" name="establecimiento" id="establecimiento" placeholder="Añade el establecimiento"
+					[(ngModel)]="establecimiento" required>
 			</div>
-		</div>
-    	<button type="submit" class="form-button">Guardar <fa-icon [icon]="faFloppyDisk"></fa-icon> </button>
 
-		<div class="mb-3">
-			<label for="exampleFormControlInput1" class="form-label">Email address</label>
-			<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-		  </div>
-		  <div class="mb-3">
-			<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-		  </div>
+			<div class="form-item fecha">
+				<p>Período:</p>
+				<div class="row">
+					<div class="col-6">
+						<label for="anio1">Desde:</label>
+						<input type="text" name="anio1" id="anio1" [(ngModel)]="anio1" placeholder="Año de inicio">
+					</div>
+				</div>
+				<div class="col-6">
+					<label for="anio2">Hasta:</label>
+					<input type="text" name="anio2" id="anio2" [(ngModel)]="anio2" placeholder="Año de finalización">
+				</div>
+			</div>
 
-	</form>
+			<div class="form-item">
+				<div class="mb-3">
+					<label for="logo" class="form-label">Logo del establecimiento</label>
+					<input class="form-control" type="file" name="logo" id="logo" [(ngModel)]="logo">
+				</div>  
+			</div>
+	
+			<div class="form-item">
+        <label for="url">URL del establecimiento:</label>
+        <input type="text" name="url" id="url" placeholder="Añade la URL del establecimiento"> <!-- añadir [(ngModel)]="url" cuando lo agregue en el modelo -->
+      </div>
+
+			<button type="submit" class="save-btn">
+				Guardar <fa-icon [icon]="faFloppyDisk"></fa-icon> 
+			</button>
+
+		</form>
+	</div>
 </div>
-
-<!--No se ve el contenido correctamente... 
-	Inicialmente creé el html y css aparte y se veía bien, será porque se accese através de un botón? -->

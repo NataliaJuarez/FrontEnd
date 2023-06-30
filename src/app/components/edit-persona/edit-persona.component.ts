@@ -2,6 +2,10 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { persona } from 'src/app/modelo/persona';
 import { UiPersonaService } from 'src/app/services/uipersona.service';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFloppyDisk } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-edit-persona',
@@ -9,6 +13,10 @@ import { UiPersonaService } from 'src/app/services/uipersona.service';
   styleUrls: ['./edit-persona.component.css']
 })
 export class EditPersonaComponent implements OnInit{
+  faXmark = faXmark;
+  faGithub = faGithub;
+  faLinkedin = faLinkedin;
+  faFloppyDisk = faFloppyDisk;
 
   @Output() onEditPersona: EventEmitter<persona> = new EventEmitter();
 

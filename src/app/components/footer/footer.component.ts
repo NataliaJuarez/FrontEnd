@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faAnglesUp } from '@fortawesome/free-solid-svg-icons';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +8,6 @@ import { faAnglesUp } from '@fortawesome/free-solid-svg-icons';
 })
 export class FooterComponent {
 
-  faAnglesUp = faAnglesUp;
+  faAngleUp = faAngleUp;
 
 }

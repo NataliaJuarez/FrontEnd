@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { TokenService } from 'src/app/services/token.service';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { faPersonWalkingArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +13,7 @@ import { faPersonWalkingArrowRight } from '@fortawesome/free-solid-svg-icons';
 export class HeaderComponent implements OnInit{
   faRightFromBracket = faRightFromBracket;
   faPersonWalkingArrowRight = faPersonWalkingArrowRight;
+  faRightToBracket = faRightToBracket;
   isLogged = false;
 
   constructor(private router: Router, private tokenService: TokenService) { }

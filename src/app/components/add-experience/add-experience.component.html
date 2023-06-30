@@ -1,37 +1,44 @@
-<div class="contenedor">
-	<div class="add-expe">
+<div class="form-container">
+	<div class="add-form">
 		<button type="button" class="close" routerLink="/portfolio"> <fa-icon [icon]="faXmark"></fa-icon> </button>
 		<h3>Añade un nuevo item</h3>
-		<form class="formu" (ngSubmit)="onSubmit()" novalidate #f="ngForm" *ngIf="showAddExperiencia">
-			
+		<form class="formu" (ngSubmit)="onSubmit()" novalidate #f="ngForm">
+			<!-- si agrego el *ngIf="showAddExperiencia" el formulario no se ve -->
+			<div class="form-item">
 				<label for="puesto">Puesto:</label>
-				<input type="text" name="puesto" id="puesto" placeholder="Añade el puesto" [(ngModel)]="puesto"
-					required>
-			
-				<label for="empresa">Empresa:</label>
-				<input type="text" name="empresa" id="empresa" placeholder="Añade la empresa" [(ngModel)]="empresa"
-					required>
-			
+				<input type="text" name="puesto" id="puesto" placeholder="Añade el puesto" [(ngModel)]="puesto" required>
+			</div>
 
-			<div class="formu-control fecha">
+			<div class="form-item">
+				<label for="empresa">Empresa:</label>
+				<input type="text" name="empresa" id="empresa" placeholder="Añade la empresa" [(ngModel)]="empresa" required>
+			</div>
+
+			<div class="form-item fecha">
 				<p>Período:</p>
-				<div class="fila">
-					<label for="anio1">Desde:</label>
-					<input type="text" name="anio1" id="anio1" [(ngModel)]="anio1" placeholder="Año de inicio">
+				<div class="row">
+					<div class="col-6">
+						<label for="anio1">Desde:</label>
+						<input type="text" name="anio1" id="anio1" [(ngModel)]="anio1" placeholder="Año de inicio">
+					</div>
 				</div>
-				<div class="fila">
+				<div class="col-6">
 					<label for="anio2">Hasta:</label>
 					<input type="text" name="anio2" id="anio2" [(ngModel)]="anio2" placeholder="Año de finalización">
 				</div>
 			</div>
 
-			
-				<p>Descripción:</p>
-				<textarea name="descripcion" id="descripcion" cols="30" rows="6"
-					placeholder="Añade una descripción de las tareas realizadas" [(ngModel)]="descripcion"
-					required></textarea>
-			
-			<button type="submit" class="form-button">Guardar <i class="fa-regular fa-floppy-disk"></i></button>
+			<div class="form-item">
+        <div class="mb-3">
+          <label for="descripcion" class="form-label">Descripción:</label>
+          <textarea class="form-control" name="descripcion" id="descripcion" rows="3"
+            placeholder="Añade una descripción de las tareas realizadas" [(ngModel)]="descripcion" required></textarea>
+        </div>
+      </div>
+
+			<button type="submit" class="save-btn">
+				Guardar <fa-icon [icon]="faFloppyDisk"></fa-icon>
+			</button>
 		</form>
 	</div>
 </div>
