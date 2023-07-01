@@ -33,14 +33,14 @@
     <div class="f-container">
       <p>Si tienes un proyecto en el que quieres que forme parte, puedes contactarme a través de un email o
         dejándome un mensaje con tus datos para que pueda contactarte. ¡Creemos un proyecto juntos!</p>
-      <div class="formulario">
+      <form class="formulario" (ngSubmit)="onSubmit()" novalidate #f="ngForm">
         <h3>¡Deja tu mensaje!</h3>
-        <input type="text" placeholder="Nombre" required>
-        <input type="text" placeholder="Apellido" required>
-        <input type="email" placeholder="Email" required>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" [(ngModel)]="nombre" required>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" [(ngModel)]="apellido" required>
+        <input type="email" name="email" id="email" placeholder="Email" [(ngModel)]="mensaje" required>
         <textarea name="" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
-      </div>
-      <button>¡Enviar!</button>
+        <button type="submit">¡Enviar!</button>
+      </form>
       <div class="container img">
         <img class="avion-img" src="../../../assets/correo.png" alt="imagen de correo">
         <!-- <a href="https://www.flaticon.es/iconos-gratis/correo" title="correo iconos">Correo iconos creados por Freepik - Flaticon</a> -->
